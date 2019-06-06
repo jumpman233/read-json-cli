@@ -1,0 +1,23 @@
+{
+  "name": "read-json-cli",
+  "version": "0.0.7",
+  "description": "A Command line tool read json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src/index.js -o ./dist/bundle.js --presets @babel/preset-env"
+  },
+  "bin": {
+    "json": "./dist/bundle.js"
+  },
+  "author": "Zhihao Lei",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  }
+}
